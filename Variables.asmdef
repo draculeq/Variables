@@ -1,0 +1,15 @@
+{
+    "name": "Variables",
+    "references": [
+        "GUID:e1466841b6aadaf4ead70552d3d409d0"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
