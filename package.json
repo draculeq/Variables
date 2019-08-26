@@ -1,12 +1,11 @@
 {
   "name": "com.deadbit.variables",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Deadbit Variables",
   "description": "Variables",
   "unity": "2019.1",
   "unityRelease": "0f1",
   "dependencies": {
-  "com.deadbit.events" : "https://github.com/draculeq/Events.git#748fc98cc636ddf4239cf33a2f867e8b7f4fb26f"
  },
  "keywords": [
     "deadbit",
