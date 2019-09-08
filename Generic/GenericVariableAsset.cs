@@ -63,7 +63,13 @@ namespace Deadbit.Variables.Generic
 
         public virtual T Value
         {
-            get { return variable.Value; }
+            get
+            {
+                if (UseReference)
+                    return this.variable.Value;
+                else
+                    return LocalVariable;
+            }
             set
             {
                 if (logValueChange)
@@ -77,7 +83,11 @@ namespace Deadbit.Variables.Generic
                     return;
                 }
 
-                this.variable.Value = value;
+                if (UseReference)
+                    this.variable.Value = value;
+                else
+                    LocalVariable = value;
+
                 if (!Equals(value, this.variable))
                     if (emitUnityEvent)
                         InvokeValueChangedEvents();
