@@ -1,12 +1,12 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
+using UnityEngine;
 
-namespace Deadbit.Variables.Sprite.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
-    public class SpriteVariable : GenericVariable<UnityEngine.Sprite>
+    public class SpriteVariable : GenericVariable<Sprite>
     {
-        public SpriteVariable(UnityEngine.Sprite value)
+        public SpriteVariable(Sprite value)
         {
             Value = value;
         }

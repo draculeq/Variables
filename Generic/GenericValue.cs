@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Deadbit.Variables.Generic
+namespace Deadbit.Variables
 {
     public class GenericValue<T> : IGenericValue<T>
     {

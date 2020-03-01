@@ -1,4 +1,4 @@
-﻿namespace Deadbit.Variables.Generic
+﻿namespace Deadbit.Variables
 {
     public interface IGenericVariable<T> : IGenericValue<T>
     {

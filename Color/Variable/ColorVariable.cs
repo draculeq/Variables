@@ -1,12 +1,12 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
+using UnityEngine;
 
-namespace Deadbit.Variables.Color.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
-    public class ColorVariable : GenericVariable<UnityEngine.Color>
+    public class ColorVariable : GenericVariable<Color>
     {
-        public ColorVariable(UnityEngine.Color value)
+        public ColorVariable(Color value)
         {
             Value = value;
         }

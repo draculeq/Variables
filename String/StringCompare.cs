@@ -1,9 +1,8 @@
-﻿using Deadbit.Variables.Generic;
+﻿using Deadbit.Events;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
 
-namespace Deadbit.Variables.String
+namespace Deadbit.Variables
 {
     public class StringCompare : SerializedMonoBehaviour
     {
@@ -11,19 +10,25 @@ namespace Deadbit.Variables.String
         [SerializeField] private IGenericValue<string> firstValue;
         [SerializeField] private IGenericValue<string> secondValue;
 
-        [SerializeField, BoxGroup("Events")]
-        private UnityEvent onDiffrent;
-        [SerializeField, BoxGroup("Events")]
-        private UnityEvent onEqual;
+        [SerializeField, BoxGroup("Events")] private StringEvent onDiffrent;
+        [SerializeField, BoxGroup("Events")] private StringEvent onEqual;
 #pragma warning restore 649
 
         [Button(ButtonSizes.Medium)]
         public void Compare()
         {
             if (firstValue.Value == secondValue.Value || (string.IsNullOrEmpty(firstValue.Value) && string.IsNullOrEmpty(secondValue.Value)))
-                onEqual.Invoke();
+                onEqual.Invoke(firstValue.Value);
             else
-                onDiffrent.Invoke();
+                onDiffrent.Invoke(firstValue.Value);
+        }
+
+        public void Compare(string comparingValue)
+        {
+            if (comparingValue == secondValue.Value || (string.IsNullOrEmpty(comparingValue) && string.IsNullOrEmpty(secondValue.Value)))
+                onEqual.Invoke(comparingValue);
+            else
+                onDiffrent.Invoke(comparingValue);
         }
     }
 }

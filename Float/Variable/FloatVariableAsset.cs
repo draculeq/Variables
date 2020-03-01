@@ -1,8 +1,7 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 using UnityEngine;
 
-namespace Deadbit.Variables.Float.Variable
+namespace Deadbit.Variables
 {
     [CreateAssetMenu(menuName = "Deadbit/Variables/Float Variable", fileName = "Float Variable")]
     public class FloatVariableAsset : GenericVariableAsset<float, FloatEvent> { }

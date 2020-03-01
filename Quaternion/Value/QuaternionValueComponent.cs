@@ -1,6 +1,6 @@
-﻿using Deadbit.Variables.Generic;
+﻿using UnityEngine;
 
-namespace Deadbit.Variables.Quaternion.Value
+namespace Deadbit.Variables
 {
-    class QuaternionValueComponent : GenericValueComponent<UnityEngine.Quaternion> { }
+    class QuaternionValueComponent : GenericValueComponent<Quaternion> { }
 }

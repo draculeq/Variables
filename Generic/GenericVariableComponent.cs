@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Deadbit.Variables.Generic
+namespace Deadbit.Variables
 {
     public class GenericVariableComponent<T, T2> : SerializedMonoBehaviour, IGenericVariableWithEvent<T> where T2 : UnityEvent<T>
     {

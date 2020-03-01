@@ -1,7 +1,6 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 
-namespace Deadbit.Variables.String.Variable
+namespace Deadbit.Variables
 {
     public class StringVariableComponent : GenericVariableComponent<string, StringEvent> { }
 }

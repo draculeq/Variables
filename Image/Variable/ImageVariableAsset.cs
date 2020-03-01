@@ -1,9 +1,9 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-namespace Deadbit.Variables.Image.Variable
+namespace Deadbit.Variables
 {
     [CreateAssetMenu(menuName = "Deadbit/Variables/Image Variable", fileName = "Image Variable")]
-    public class ImageVariableAsset : GenericVariableAsset<UnityEngine.UI.Image, ImageEvent> { }
+    public class ImageVariableAsset : GenericVariableAsset<Image, ImageEvent> { }
 }

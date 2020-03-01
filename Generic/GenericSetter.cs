@@ -2,13 +2,13 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Deadbit.Variables.Setters
+namespace Deadbit.Variables
 {
-    class FloatSetter : SerializedMonoBehaviour
+    class GenericSetter<T> : SerializedMonoBehaviour
     {
 #pragma warning disable 649
-        [SerializeField] private Func<float> Get;
-        [SerializeField] private Action<float> Set;
+        [SerializeField] private Func<T> Get;
+        [SerializeField] private Action<T> Set;
 #pragma warning restore 649
 
         [Button(ButtonSizes.Medium)]

@@ -1,12 +1,12 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
+using UnityEngine;
 
-namespace Deadbit.Variables.Quaternion.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
-    public class QuaternionVariable : GenericVariable<UnityEngine.Quaternion>
+    public class QuaternionVariable : GenericVariable<Quaternion>
     {
-        public QuaternionVariable(UnityEngine.Quaternion value)
+        public QuaternionVariable(Quaternion value)
         {
             Value = value;
         }

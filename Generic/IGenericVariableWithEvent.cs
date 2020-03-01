@@ -1,6 +1,6 @@
 ﻿using UnityEngine.Events;
 
-namespace Deadbit.Variables.Generic
+namespace Deadbit.Variables
 {
     interface IGenericVariableWithEvent<T> : IGenericVariable<T>
     {

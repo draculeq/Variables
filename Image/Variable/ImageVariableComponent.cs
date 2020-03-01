@@ -1,7 +1,7 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
+using UnityEngine.UI;
 
-namespace Deadbit.Variables.Image.Variable
+namespace Deadbit.Variables
 {
-    public class ImageVariableComponent : GenericVariableComponent<UnityEngine.UI.Image, ImageEvent> { }
+    public class ImageVariableComponent : GenericVariableComponent<Image, ImageEvent> { }
 }

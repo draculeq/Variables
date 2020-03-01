@@ -1,6 +1,6 @@
 ﻿using Sirenix.OdinInspector;
 
-namespace Deadbit.Variables.Generic
+namespace Deadbit.Variables
 {
     public class GenericValueComponent<T> : SerializedMonoBehaviour, IGenericValue<T>
     {

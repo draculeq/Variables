@@ -1,6 +1,6 @@
-﻿using Deadbit.Variables.Generic;
+﻿using UnityEngine.UI;
 
-namespace Deadbit.Variables.Image.Value
+namespace Deadbit.Variables
 {
-    class ImageValueComponent : GenericValueComponent<UnityEngine.UI.Image> { }
+    class ImageValueComponent : GenericValueComponent<Image> { }
 }

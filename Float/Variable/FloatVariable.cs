@@ -1,7 +1,6 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
 
-namespace Deadbit.Variables.Float.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
     public class FloatVariable : GenericVariable<float>

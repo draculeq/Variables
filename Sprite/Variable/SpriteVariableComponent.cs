@@ -1,7 +1,7 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
+using UnityEngine;
 
-namespace Deadbit.Variables.Sprite.Variable
+namespace Deadbit.Variables
 {
-    public class SpriteVariableComponent : GenericVariableComponent<UnityEngine.Sprite, SpriteEvent> { }
+    public class SpriteVariableComponent : GenericVariableComponent<Sprite, SpriteEvent> { }
 }

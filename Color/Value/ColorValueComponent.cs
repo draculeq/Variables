@@ -1,6 +1,6 @@
-﻿using Deadbit.Variables.Generic;
+﻿using UnityEngine;
 
-namespace Deadbit.Variables.Color.Value
+namespace Deadbit.Variables
 {
-    class ColorValueComponent : GenericValueComponent<UnityEngine.Color> { }
+    class ColorValueComponent : GenericValueComponent<Color> { }
 }

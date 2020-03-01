@@ -1,7 +1,7 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
+using UnityEngine;
 
-namespace Deadbit.Variables.Quaternion.Variable
+namespace Deadbit.Variables
 {
-    public class QuaternionVariableComponent : GenericVariableComponent<UnityEngine.Quaternion, QuaternionEvent> { }
+    public class QuaternionVariableComponent : GenericVariableComponent<Quaternion, QuaternionEvent> { }
 }

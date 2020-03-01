@@ -1,8 +1,7 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 using UnityEngine;
 
-namespace Deadbit.Variables.Texture.Variable
+namespace Deadbit.Variables
 {
     public class TextureVariableComponent : GenericVariableComponent<Texture2D, TextureEvent> { }
 }

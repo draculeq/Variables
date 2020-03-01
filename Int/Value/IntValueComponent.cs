@@ -1,6 +1,4 @@
-﻿using Deadbit.Variables.Generic;
-
-namespace Deadbit.Variables.Int.Value
+﻿namespace Deadbit.Variables
 {
     class IntValueComponent : GenericValueComponent<int> { }
 }

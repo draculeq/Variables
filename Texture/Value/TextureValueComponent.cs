@@ -1,7 +1,6 @@
-﻿using Deadbit.Variables.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Deadbit.Variables.Texture.Value
+namespace Deadbit.Variables
 {
     class TextureValueComponent : GenericValueComponent<Texture2D> { }
 }

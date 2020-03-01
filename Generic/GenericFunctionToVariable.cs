@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Deadbit.Variables.Generic
+namespace Deadbit.Variables
 {
     [Serializable]
     public class GenericFunctionToVariable<T> : IGenericValue<T>, IGenericVariable<Func<T>>

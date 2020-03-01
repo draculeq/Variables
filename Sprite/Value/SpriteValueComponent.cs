@@ -1,6 +1,6 @@
-﻿using Deadbit.Variables.Generic;
+﻿using UnityEngine;
 
-namespace Deadbit.Variables.Sprite.Value
+namespace Deadbit.Variables
 {
-    class SpriteValueComponent : GenericValueComponent<UnityEngine.Sprite> { }
+    class SpriteValueComponent : GenericValueComponent<Sprite> { }
 }

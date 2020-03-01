@@ -1,7 +1,6 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
 
-namespace Deadbit.Variables.Int.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
     public class IntVariable : GenericVariable<int>

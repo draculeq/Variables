@@ -1,7 +1,6 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
 
-namespace Deadbit.Variables.Bool.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
     public class BoolVariable : GenericVariable<bool>

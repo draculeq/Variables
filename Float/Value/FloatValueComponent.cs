@@ -1,6 +1,4 @@
-﻿using Deadbit.Variables.Generic;
-
-namespace Deadbit.Variables.Float.Value
+﻿namespace Deadbit.Variables
 {
     class FloatValueComponent : GenericValueComponent<float> { }
 }

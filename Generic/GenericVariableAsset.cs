@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Deadbit.Variables.Generic
+namespace Deadbit.Variables
 {
     public enum VariableChangePermission
     {
@@ -65,6 +65,7 @@ namespace Deadbit.Variables.Generic
         {
             get
             {
+
                 if (UseReference)
                     return this.variable.Value;
                 else

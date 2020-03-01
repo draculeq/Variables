@@ -1,12 +1,12 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
+using UnityEngine.UI;
 
-namespace Deadbit.Variables.Image.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
-    public class ImageVariable : GenericVariable<UnityEngine.UI.Image>
+    public class ImageVariable : GenericVariable<Image>
     {
-        public ImageVariable(UnityEngine.UI.Image value)
+        public ImageVariable(Image value)
         {
             Value = value;
         }

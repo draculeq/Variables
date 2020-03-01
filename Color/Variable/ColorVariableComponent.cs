@@ -1,7 +1,7 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
+using UnityEngine;
 
-namespace Deadbit.Variables.Int.Variable
+namespace Deadbit.Variables
 {
-    public class ColorVariableComponent : GenericVariableComponent<UnityEngine.Color, ColorEvent> { }
+    public class ColorVariableComponent : GenericVariableComponent<Color, ColorEvent> { }
 }

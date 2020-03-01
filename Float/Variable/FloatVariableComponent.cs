@@ -1,7 +1,6 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 
-namespace Deadbit.Variables.Float.Variable
+namespace Deadbit.Variables
 {
     public class FloatVariableComponent : GenericVariableComponent<float, FloatEvent> { }
 }

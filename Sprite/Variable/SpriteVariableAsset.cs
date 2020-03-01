@@ -1,9 +1,8 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 using UnityEngine;
 
-namespace Deadbit.Variables.Sprite.Variable
+namespace Deadbit.Variables
 {
     [CreateAssetMenu(menuName = "Deadbit/Variables/Sprite Variable", fileName = "Sprite Variable")]
-    public class SpriteVariableAsset : GenericVariableAsset<UnityEngine.Sprite, SpriteEvent> { }
+    public class SpriteVariableAsset : GenericVariableAsset<Sprite, SpriteEvent> { }
 }

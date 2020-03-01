@@ -1,8 +1,7 @@
 ﻿using System;
-using Deadbit.Variables.Generic;
 using UnityEngine;
 
-namespace Deadbit.Variables.Texture.Variable
+namespace Deadbit.Variables
 {
     [Serializable]
     public class TextureVariable : GenericVariable<Texture2D>

@@ -1,7 +1,6 @@
 ﻿using Deadbit.Events;
-using Deadbit.Variables.Generic;
 
-namespace Deadbit.Variables.Bool.Variable
+namespace Deadbit.Variables
 {
     public class BoolVariableComponent : GenericVariableComponent<bool, BoolEvent> { }
 }
