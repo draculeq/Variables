@@ -15,14 +15,13 @@ namespace Deadbit.Variables
 #pragma warning restore 649
 
         [Button(ButtonSizes.Medium)]
-        public string Append()
+        public void Invoke()
         {
             var stringBuilder = new StringBuilder();
-            foreach (var value in values) stringBuilder.Append(value);
+            foreach (var value in values) stringBuilder.Append(value.Value);
 
-            var result = values.ToString();
+            var result = stringBuilder.ToString();
             Appended?.Invoke(result);
-            return result;
         }
     }
 }

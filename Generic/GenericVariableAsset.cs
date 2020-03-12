@@ -127,5 +127,10 @@ namespace Deadbit.Variables
                 {"Value", false},
                 {"Reference", true}
             };
+
+        public override string ToString()
+        {
+            return Value.ToString();
+        }
     }
 }
