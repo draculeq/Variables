@@ -6,13 +6,13 @@ using UnityEngine;
 public class FloatMultiply : SerializedMonoBehaviour
 {
 #pragma warning disable 649
-    [SerializeField] private IGenericValue<float> firstValue;
-    [SerializeField] private IGenericValue<float> secondValue;
+    [SerializeField] private IGenericValue<float> firstMultiplierValue;
+    [SerializeField] private IGenericValue<float> secondMultiplierValue;
     [SerializeField] private FloatEvent Multiplied;
 #pragma warning restore 649
 
     public void Invoke()
     {
-        Multiplied?.Invoke(firstValue.Value * secondValue.Value);
+        Multiplied?.Invoke(firstMultiplierValue.Value * secondMultiplierValue.Value);
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine;
 public class FloatDivide : SerializedMonoBehaviour
 {
 #pragma warning disable 649
-    [SerializeField] private IGenericValue<float> firstValue;
-    [SerializeField] private IGenericValue<float> secondValue;
+    [SerializeField] private IGenericValue<float> dividendValue;
+    [SerializeField] private IGenericValue<float> divisorValue;
     [SerializeField] private FloatEvent Divided;
 #pragma warning restore 649
 
@@ -15,10 +15,10 @@ public class FloatDivide : SerializedMonoBehaviour
     {
         if (Divided != null)
         {
-            if (secondValue.Value == 0)
+            if (divisorValue.Value == 0)
                 Divided?.Invoke(float.MaxValue);
             else
-                Divided?.Invoke((float)firstValue.Value / secondValue.Value);
+                Divided?.Invoke((float)dividendValue.Value / divisorValue.Value);
         }
     }
 }
