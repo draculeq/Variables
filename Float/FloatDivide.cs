@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Deadbit.Variables
 {
-    public class FloatDivide : SerializedMonoBehaviour
+    public class FloatDivide : SerializedMonoBehaviour, IGenericValue<float>
     {
 #pragma warning disable 649
         [SerializeField] private IGenericValue<float> dividendValue;
@@ -14,13 +14,27 @@ namespace Deadbit.Variables
 
         public void Invoke()
         {
-            if (Divided != null)
+            Divided?.Invoke(Value);
+        }
+
+
+        public float Value
+        {
+            get
             {
-                if (divisorValue.Value == 0)
-                    Divided?.Invoke(float.MaxValue);
-                else
-                    Divided?.Invoke((float)dividendValue.Value / divisorValue.Value);
+                if (Divided != null)
+                {
+                    if (divisorValue.Value == 0)
+                    {
+                        Debug.LogWarning("Divisor value is equal 0");
+                        return float.MaxValue;
+                    }
+                    else
+                        return dividendValue.Value / divisorValue.Value;
+                }
+
+                Debug.LogError("Dividend value is not setup returning 0");
+                return 0;
             }
         }
     }
-}
