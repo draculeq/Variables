@@ -41,6 +41,9 @@ namespace Deadbit.Variables
         [BoxGroup("Options"), SerializeField]
         private bool logValueChange;
 #pragma warning restore 649
+        
+        [SerializeField,BoxGroup("Options"),ShowIf("ChangePermission",VariableChangePermission.ALLOW_TEMPORARY)]
+        private T defaultVariable;
 
         protected virtual void ChangeCachedValue()
         {
@@ -97,6 +100,7 @@ namespace Deadbit.Variables
         }
 
         UnityEvent<T> IGenericVariableWithEvent<T>.ValueChanged => ValueChanged;
+        
 
         public void OnEnable()
         {
@@ -109,7 +113,9 @@ namespace Deadbit.Variables
         public void OnDisable()
         {
             if (ChangePermission == VariableChangePermission.ALLOW_TEMPORARY)
-                LocalVariable = cachedVariable;
+            {
+                cachedVariable = defaultVariable;
+            }
         }
 
         protected virtual void InvokeValueChangedEvents()
