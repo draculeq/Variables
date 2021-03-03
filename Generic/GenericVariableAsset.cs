@@ -106,7 +106,7 @@ namespace Deadbit.Variables
         {
             if (ChangePermission == VariableChangePermission.ALLOW_TEMPORARY)
             {
-                LocalVariable = cachedVariable;
+                LocalVariable = defaultVariable;
             }
         }
 
